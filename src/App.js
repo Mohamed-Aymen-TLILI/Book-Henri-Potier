@@ -61,7 +61,7 @@ function App() {
 
   function emptyCart() {
     const response = window.confirm(
-      "Etes-vous vous sûr de vouloir vider le panier ? "
+      "Etes-vous sûr de vouloir vider le panier ? "
     );
     if (response) {
       setCart({});
