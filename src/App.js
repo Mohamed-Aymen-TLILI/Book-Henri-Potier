@@ -151,10 +151,10 @@ findBestOffers();
             <br />
             <Menu stackable>
               <Menu.Item>
-                <Link to="/">La bibliothèque d'Henri Potier</Link>
+                <Link to="/Book-Henri-Potier/">La bibliothèque d'Henri Potier</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/cart">
+                <Link to="/Book-Henri-Potier/cart">
                   <Icon name="cart" size="small" /> <CartSummary />
                 </Link>
               </Menu.Item>
@@ -162,8 +162,8 @@ findBestOffers();
             <br />
           </Container>
           <Switch>
-            <Route path="/cart" component={CartDetails} />
-            <Route path="/" component={BookList} />
+            <Route path="/Book-Henri-Potier/cart" component={CartDetails} />
+            <Route path="/Book-Henri-Potier/" component={BookList} />
           </Switch>
         </CartContext.Provider>
       </Router>
